@@ -13,6 +13,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final transList = Transaction.transactionList();
+
+  final children = List<Widget>.generate(5, (i) => ListTile(title: Text('$i')));
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
